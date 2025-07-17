@@ -22,7 +22,7 @@ export default function About(){
 
         {/*  Optional Buttons  */}
         
-        <a href="/Riteshresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+        <a href={`${import.meta.env.BASE_URL}Riteshresume.pdf`} target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
         Download Resume
         </a>
 
