@@ -22,7 +22,7 @@ export default function About(){
 
         {/*  Optional Buttons  */}
         
-        <a href="../public/Riteshresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+        <a href="/Riteshresume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
         Download Resume
         </a>
 
