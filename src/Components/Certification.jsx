@@ -74,10 +74,10 @@ export default function Certifications(){
               </div>
               <div className="card-footer bg-transparent border-0">
                 <a
-                  href="#"
-                  className="btn btn-outline-dark btn-sm disabled"
+                  href="https://drive.google.com/file/d/1PbaC3kfvviTMCAvLsAAVUMFTHCiLBtSw/view"
+                  className="btn btn-outline-dark btn-sm "
                 >
-                  Coming Soon
+                  View Certificate
                 </a>
               </div>
             </div>
