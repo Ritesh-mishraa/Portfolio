@@ -13,7 +13,7 @@ const Projects = () => {
           {/* Project Card 1 */}
           <div className="col">
             <div className="card h-100 shadow-sm">
-              {/* <img src="/project1.jpg" className="card-img-top" alt="Project 1" /> */}
+              <img src="wanderlust.png" className="card-img-top" alt="Project 1" />
               <div className="card-body">
                 <h5 className="card-title">A Full Stack Hotel Management Website</h5>
                 <p className="card-text">
@@ -38,7 +38,7 @@ const Projects = () => {
                   href="https://wanderlust-dz5h.onrender.com/listings"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-outline-secondary btn-sm"
+                  className="btn btn-primary btn-sm"
                 >
                   Visit Website
                 </a>
@@ -46,10 +46,44 @@ const Projects = () => {
             </div>
           </div>
 
+          
           {/* Project Card 2 */}
           <div className="col">
             <div className="card h-100 shadow-sm">
-              {/* <img src="/project2.jpg" className="card-img-top" alt="Project 2" /> */}
+              <img src="quickmeet.png" className="card-img-top" alt="Project 2" />
+              <div className="card-body">
+                <h5 className="card-title">QuickMeet – Meet Instantly, Meet Securely.</h5>
+                <p className="card-text">
+                    <li>
+                    A high-performance video conferencing application built with the MERN stack (MongoDB, Express.js, React, Node.js). QuickMeet leverages WebRTC for secure, peer-to-peer audio/video streaming and WebSockets for real-time signaling and chat. This project demonstrates complex state management in React and a scalable backend architecture for low-latency communication.
+                    </li>
+                </p>
+              </div>
+              <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
+                <a
+                  href="https://github.com/Ritesh-mishraa/QuickMeet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-dark btn-sm"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://quickmeetfrontend-2bay.onrender.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-sm"
+                >
+                  Visit Website
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project Card 3 */}
+          {/* <div className="col">
+            <div className="card h-100 shadow-sm">
+              <img src="/project2.jpg" className="card-img-top" alt="Project 2" />
               <div className="card-body">
                 <h5 className="card-title">Text Utility</h5>
                 <p className="card-text">
@@ -70,22 +104,22 @@ const Projects = () => {
                 >
                   GitHub
                 </a>
-                {/* <a
+                <a
                   href="https://yourliveproject2.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary btn-sm"
                 >
                   Visit Websites
-                </a> */}
+                </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Project Card 3 */}
           <div className="col">
             <div className="card h-100 shadow-sm">
-              {/* <img src="/project3.jpg" className="card-img-top" alt="Project 3" /> */}
+              <img src="exploreIndianIsland.png" className="card-img-top" alt="Project 3" />
               <div className="card-body">
                 <h5 className="card-title">Explore Indian Island</h5>
                 <p className="card-text">
