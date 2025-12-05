@@ -1,0 +1,22 @@
+/* Pre.css */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0f172a; /* Matches your background color */
+  background-image: url("https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png"); /* Optional: A cute gear icon or use a CSS spinner */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px; /* Adjust size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader-none {
+  opacity: 0;
+  display: none;
+}

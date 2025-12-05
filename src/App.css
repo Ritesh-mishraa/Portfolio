@@ -1,0 +1,50 @@
+/* App.css - Global Styles */
+
+/* 1. Logic for the Preloader (Stops scrolling) */
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+#scroll {
+  overflow: auto;
+}
+
+/* 2. Global Resets */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean font */
+  background-color: #0f172a; /* Fallback color if particles fail */
+  color: white;
+  overflow-x: hidden; /* Prevents horizontal scrollbar */
+}
+
+/* 3. Custom Scrollbar (The "Pro" Touch) */
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #38bdf8; /* Your theme's blue color */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; 
+}
+
+/* 4. Selection Color (When you highlight text) */
+::selection {
+  background: #38bdf8;
+  color: #000;
+}
