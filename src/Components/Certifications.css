@@ -3,7 +3,6 @@
 .cert-section {
     padding: 80px 0;
     position: relative;
-    /* Transparent background for particles */
 }
 
 /* Consistent Title */
@@ -25,19 +24,19 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 30px 20px 20px; /* Top padding for icon space */
+    padding: 30px 20px 20px; 
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
     transition: all 0.3s ease;
-    margin-top: 30px; /* Space for the floating icon */
+    margin-top: 30px; 
 }
 
 .cert-card:hover {
     transform: translateY(-10px);
-    border-color: #ffd700; /* Gold border on hover */
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15); /* Gold glow */
+    border-color: #ffd700; 
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15); 
 }
 
 /* Floating Icon Badge */
@@ -48,7 +47,7 @@
     transform: translateX(-50%);
     width: 60px;
     height: 60px;
-    background: #0f172a; /* Matches page background */
+    background: #0f172a; 
     border: 2px solid #38bdf8;
     border-radius: 50%;
     display: flex;
@@ -59,7 +58,7 @@
 }
 
 .cert-icon {
-    color: #ffd700; /* Gold icon */
+    color: #ffd700; 
     font-size: 1.8rem;
 }
 
@@ -78,13 +77,13 @@
 }
 
 .cert-issuer {
-    color: #38bdf8; /* Blue accent */
+    color: #38bdf8; 
     font-size: 0.9rem;
     margin-bottom: 15px;
 }
 
 .cert-text {
-    color: #cbd5e1; /* Soft Gray */
+    color: #cbd5e1; 
     font-size: 0.95rem;
     line-height: 1.6;
 }
@@ -111,8 +110,8 @@
 }
 
 .view-cert-btn:hover {
-    background: #ffd700; /* Gold Background */
-    color: #000; /* Black Text */
+    background: #ffd700; 
+    color: #000; 
     border-color: #ffd700;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }

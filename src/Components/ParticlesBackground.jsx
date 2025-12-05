@@ -20,7 +20,7 @@ const ParticlesBackground = () => {
       id="tsparticles"
       options={{
         background: {
-          color: { value: "#0f172a" }, // Dark background (change if needed)
+          color: { value: "#0f172a" }, 
         },
         fpsLimit: 120,
         particles: {
@@ -34,7 +34,7 @@ const ParticlesBackground = () => {
           },
           move: {
             enable: true,
-            speed: 1, // Slow movement for professional look
+            speed: 1, 
           },
           number: {
             density: { enable: true },
@@ -45,12 +45,12 @@ const ParticlesBackground = () => {
         },
       }}
       style={{
-        position: "fixed", // Fixed so it covers the whole screen while you scroll
+        position: "fixed", 
         top: 0,
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: -1, // Puts it BEHIND your content
+        zIndex: -1, 
       }}
     />
   );

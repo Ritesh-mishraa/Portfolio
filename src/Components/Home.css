@@ -1,9 +1,8 @@
-/* Home.css */
 
 /* General Layout */
 .home-section {
   position: relative;
-  z-index: 1; /* Ensures it sits ABOVE the particle background */
+  z-index: 1; 
   height: 100vh;
   display: flex;
   align-items: center;
@@ -18,7 +17,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  flex-wrap: wrap; /* Wraps on mobile */
+  flex-wrap: wrap; 
 }
 
 /* Text Area */
@@ -35,7 +34,7 @@
 }
 
 .main-name {
-  color: #38bdf8; /* Modern Light Blue */
+  color: #38bdf8; 
   text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
 
@@ -55,7 +54,7 @@
 .description {
   margin-top: 20px;
   font-size: 1.1rem;
-  color: #cbd5e1; /* Soft gray text */
+  color: #cbd5e1; 
   max-width: 500px;
   line-height: 1.6;
 }

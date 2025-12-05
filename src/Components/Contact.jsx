@@ -48,7 +48,7 @@ const Contact = () => {
                Designed & Built by <span className="name-highlight">Ritesh Mishra</span>
              </p>
              
-             {/* Scroll to Top Button */}
+             
              <div className="scroll-top" onClick={scrollToTop}>
                <FaArrowUp />
              </div>

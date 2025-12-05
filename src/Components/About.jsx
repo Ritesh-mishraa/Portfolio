@@ -11,8 +11,6 @@ const About = () => {
     <section id="about" className="about-section">
       <Container>
         <Row className="align-items-center">
-          
-          {/* Left Side: Profile Image with 3D Tilt */}
           <Col md={5} className="mb-5 mb-md-0 d-flex justify-content-center">
             <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.05}>
               <motion.div 
@@ -21,7 +19,6 @@ const About = () => {
                 transition={{ duration: 0.5 }}
                 className="img-wrapper"
               >
-                {/* Ensure riteshimage.jpg is in your public folder */}
                 <img src="riteshimage.jpg" alt="Ritesh Kumar Mishra" className="profile-img" />
               </motion.div>
             </Tilt>

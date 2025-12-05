@@ -7,7 +7,6 @@ import './Projects.css';
 
 const Projects = () => {
   
-  // Project Data Array
   const projects = [
     {
       title: "WanderLust",
@@ -59,25 +58,21 @@ const Projects = () => {
                 <Tilt glareEnable={true} glareMaxOpacity={0.2} scale={1.02} transitionSpeed={2500}>
                   <div className="project-card">
                     
-                    {/* Image Section */}
                     <div className="card-img-wrapper">
                       <img src={project.img} alt={project.title} className="project-img" />
                       <div className="img-overlay"></div>
                     </div>
 
-                    {/* Content Section */}
                     <div className="card-content">
                       <h5 className="project-title">{project.title}</h5>
                       <p className="project-desc">{project.description}</p>
-                      
-                      {/* Tech Stack Tags */}
+ 
                       <div className="tech-tags">
                         {project.tech.map((t, i) => (
                           <span key={i} className="tech-badge">{t}</span>
                         ))}
                       </div>
-
-                      {/* Buttons */}
+                      
                       <div className="project-links">
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
                           <FaGithub /> GitHub

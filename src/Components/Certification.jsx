@@ -5,8 +5,7 @@ import { FaAward, FaExternalLinkAlt, FaUniversity, FaLaptopCode } from "react-ic
 import './Certifications.css';
 
 export default function Certifications() {
-  
-  // Data for cleaner code
+
   const certifications = [
     {
       title: "Database Management Systems",
@@ -55,7 +54,6 @@ export default function Certifications() {
               >
                 <div className="cert-card">
                   <div className="icon-wrapper">
-                    {/* Render the specific icon for this certificate */}
                     <span className="cert-icon">{cert.icon}</span>
                   </div>
                   

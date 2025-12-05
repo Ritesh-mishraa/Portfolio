@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from "react-bootstrap"; // Assuming you might use Bootstrap, if not, standard divs work too.
+import { Container, Row, Col } from "react-bootstrap"; 
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
@@ -10,7 +10,6 @@ const Home = () => {
     <section className="home-section" id="home">
       <div className="home-content">
         
-        {/* Text Section with Animation */}
         <motion.div 
           initial={{ opacity: 0, y: -50 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -49,7 +48,6 @@ const Home = () => {
             Passionate about <b>JavaScript, React, and Backend Systems.</b>
           </p>
 
-          {/* Social Icons & Buttons */}
           <div className="social-links">
             <a href="https://github.com/Ritesh-mishraa" target="_blank" rel="noopener noreferrer" className="social-btn">
               <FaGithub />
@@ -74,14 +72,12 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* Image/Avatar Section */}
         <motion.div 
           initial={{ opacity: 0, x: 50 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8, delay: 0.2 }}
           className="image-area"
         >
-          {/* Replace this URL with your actual photo path, e.g., require('../Assets/avatar.png') */}
           <img 
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Man%20Technologist.png" 
             alt="Ritesh Avatar" 
