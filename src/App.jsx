@@ -5,15 +5,20 @@ import Projects from "./Components/Project"
 import Certifications from './Components/Certification';
 import Skills from './Components/Skills';
 import Contact from './Components/Contact';
+import ParticlesBackground from './Components/ParticlesBackground';
+import Home from './Components/Home';
 
 function App() {
   return (
     <>
+      
       <Navbar id="about"/>
+      <ParticlesBackground />
+      <Home />
       <About />
-      <Skills id="skills" />
+      <Skills />
       <Projects id="projects" />
-      <Certifications id="certifications" />
+      <Certifications />
       <Contact id="contact"/>
     </>
   )

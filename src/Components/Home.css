@@ -1,0 +1,191 @@
+/* Home.css */
+
+/* General Layout */
+.home-section {
+  position: relative;
+  z-index: 1; /* Ensures it sits ABOVE the particle background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 50px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Wraps on mobile */
+}
+
+/* Text Area */
+.text-area {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.heading-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-name {
+  color: #38bdf8; /* Modern Light Blue */
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.greeting {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #cbd5e1; /* Soft gray text */
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Image Area */
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.image-area img {
+  filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.4));
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Social Icons */
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Buttons */
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+}
+
+.btn-secondary {
+  padding: 12px 30px;
+  background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* Animations */
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 100px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .home-content {
+    flex-direction: column-reverse; /* Puts image on top for mobile */
+    gap: 30px;
+  }
+
+  .text-area {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading-name {
+    font-size: 2.2rem;
+  }
+  
+  .description {
+    margin: 20px auto;
+  }
+}

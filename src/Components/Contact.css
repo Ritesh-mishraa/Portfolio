@@ -1,0 +1,140 @@
+/* Contact.css */
+
+.contact-section {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Main Container Box */
+.contact-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+.contact-text {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Email Button */
+.email-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 35px;
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-btn:hover {
+    background: rgba(56, 189, 248, 0.15);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    transform: translateY(-3px);
+    color: #38bdf8;
+}
+
+/* Footer Social Icons */
+.social-icons-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.footer-icon:hover {
+    color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.name-highlight {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+/* Scroll To Top Button */
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.scroll-top:hover {
+    background: #38bdf8;
+    border-color: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        padding: 30px 15px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

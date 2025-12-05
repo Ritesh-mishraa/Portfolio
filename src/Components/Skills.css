@@ -1,0 +1,93 @@
+/* Skills.css */
+
+.skills-section {
+    padding: 80px 0;
+    position: relative;
+    /* No bg color, letting particles show through */
+}
+
+/* Section Title (Consistent with About/Home) */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.highlight {
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+/* The Glass Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+.category-title {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* The Grid inside the card */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Individual Skill Pill */
+.skill-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-pill:hover {
+    background: rgba(56, 189, 248, 0.2);
+    border-color: #38bdf8;
+    transform: scale(1.05);
+}
+
+.skill-name {
+    color: #cbd5e1;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Icon Colors (Optional: gives them their real brand colors) */
+.icon-java { color: #f89820; font-size: 1.2rem; }
+.icon-js { color: #f7df1e; font-size: 1.2rem; }
+.icon-react { color: #61dafb; font-size: 1.2rem; }
+.icon-html { color: #e34f26; font-size: 1.2rem; }
+.icon-css { color: #1572b6; font-size: 1.2rem; }
+.icon-node { color: #339933; font-size: 1.2rem; }
+.icon-mongo { color: #47a248; font-size: 1.2rem; }
+.icon-sql { color: #00758f; font-size: 1.2rem; }
+.icon-git { color: #f05032; font-size: 1.2rem; }
+.icon-vscode { color: #007acc; font-size: 1.2rem; }
+.icon-postman { color: #ff6c37; font-size: 1.2rem; }

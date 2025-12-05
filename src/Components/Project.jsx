@@ -1,158 +1,101 @@
 import React from 'react';
-
-
+import { Container, Row, Col } from "react-bootstrap";
+import Tilt from 'react-parallax-tilt';
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import './Projects.css';
 
 const Projects = () => {
+  
+  // Project Data Array
+  const projects = [
+    {
+      title: "WanderLust",
+      description: "A comprehensive full-stack marketplace for property rentals. Built using the MVC architecture with Node.js and Express. Features include secure user authentication (Passport.js), RESTful API integration for map services, and a robust review system using MongoDB.",
+      tech: ["Node.js", "Express", "MongoDB", "Passport.js", "MVC"],
+      img: "wanderlust.png",
+      github: "https://github.com/Ritesh-mishraa/WanderLust.git",
+      live: "https://wanderlust-dz5h.onrender.com/listings"
+    },
+    {
+      title: "QuickMeet",
+      description: "A real-time video conferencing application designed for low-latency communication. Engineered using WebRTC for peer-to-peer media streaming and Socket.io for instant signaling. Features include secure room creation, video toggles, and synchronized chat functionality.",
+      tech: ["React", "WebRTC", "Socket.io", "Node.js", "Material UI"],
+      img: "quickmeet.png",
+      github: "https://github.com/Ritesh-mishraa/QuickMeet",
+      live: "https://quickmeetfrontend-2bay.onrender.com/"
+    },
+    {
+      title: "Explore Indian Islands",
+      description: "An immersive travel guide platform showcasing the beauty of Indian islands. Focused on responsive UI design and optimized asset loading to ensure a seamless user experience across devices. Currently integrating SQL for structured data management.",
+      tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      img: "exploreIndianIsland.png",
+      github: "https://github.com/rudreshtiwari10/exploreindianislands.git",
+      live: null 
+    }
+  ];
+
   return (
-    <section id="projects" className="py-5">
-      <div className="container">
-        <h2 className="text mb-5 fw-bold display-5 ">
-            <span className="border-bottom border-3 border-dark pb-1">My Projects</span>
-        </h2>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {/* Project Card 1 */}
-          <div className="col">
-            <div className="card h-100 shadow-sm">
-              <img src="wanderlust.png" className="card-img-top" alt="Project 1" />
-              <div className="card-body">
-                <h5 className="card-title">A Full Stack Hotel Management Website</h5>
-                <p className="card-text">
-                    <li>
-                        Wanderlust is a full-stack web application developed using Node.js, Express, MongoDB, and EJS for users to explore and list travel destinations with features like search by country, location, and title. Users can also give reviews and comments to the listings.
-                    </li>
-                    {/* <li>
-                        Integrated Cloudinary for image uploads, user authentication with Passport.js, and implemented responsive UI usingBootstrap to ensure a mobile-first experience.
-                    </li> */}
-                </p>
-              </div>
-              <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
-                <a
-                  href="https://github.com/Ritesh-mishraa/WanderLust.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark btn-sm"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://wanderlust-dz5h.onrender.com/listings"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm"
-                >
-                  Visit Website
-                </a>
-              </div>
-            </div>
-          </div>
+    <section id="projects" className="projects-section">
+      <Container>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="section-title text-center">
+            My <span className="highlight">Projects</span>
+          </h2>
+        </motion.div>
 
-          
-          {/* Project Card 2 */}
-          <div className="col">
-            <div className="card h-100 shadow-sm">
-              <img src="quickmeet.png" className="card-img-top" alt="Project 2" />
-              <div className="card-body">
-                <h5 className="card-title">QuickMeet – Meet Instantly, Meet Securely.</h5>
-                <p className="card-text">
-                    <li>
-                    A high-performance video conferencing application built with the MERN stack (MongoDB, Express.js, React, Node.js). QuickMeet leverages WebRTC for secure, peer-to-peer audio/video streaming and WebSockets for real-time signaling and chat. This project demonstrates complex state management in React and a scalable backend architecture for low-latency communication.
-                    </li>
-                </p>
-              </div>
-              <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
-                <a
-                  href="https://github.com/Ritesh-mishraa/QuickMeet"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark btn-sm"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://quickmeetfrontend-2bay.onrender.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm"
-                >
-                  Visit Website
-                </a>
-              </div>
-            </div>
-          </div>
+        <Row className="g-4 justify-content-center">
+          {projects.map((project, index) => (
+            <Col md={6} lg={4} key={index}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Tilt glareEnable={true} glareMaxOpacity={0.2} scale={1.02} transitionSpeed={2500}>
+                  <div className="project-card">
+                    
+                    {/* Image Section */}
+                    <div className="card-img-wrapper">
+                      <img src={project.img} alt={project.title} className="project-img" />
+                      <div className="img-overlay"></div>
+                    </div>
 
-          {/* Project Card 3 */}
-          {/* <div className="col">
-            <div className="card h-100 shadow-sm">
-              <img src="/project2.jpg" className="card-img-top" alt="Project 2" />
-              <div className="card-body">
-                <h5 className="card-title">Text Utility</h5>
-                <p className="card-text">
-                    <li>
-                    This project provides a text utility to get the number of words and characters. User can also  convert their text into different font cases like CamelCase, Lowercase, and Uppercase.
-                    </li>
-                    <li>
-                    In this project, React.js is used, and the front end is created by Bootstrap, HTML, and CSS
-                    </li>
-                </p>
-              </div>
-              <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
-                <a
-                  href="https://github.com/Ritesh-mishraa/Text-Utils.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark btn-sm"
-                >
-                  GitHub
-                </a>
-                <a
-                  href="https://yourliveproject2.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm"
-                >
-                  Visit Websites
-                </a>
-              </div>
-            </div>
-          </div> */}
+                    {/* Content Section */}
+                    <div className="card-content">
+                      <h5 className="project-title">{project.title}</h5>
+                      <p className="project-desc">{project.description}</p>
+                      
+                      {/* Tech Stack Tags */}
+                      <div className="tech-tags">
+                        {project.tech.map((t, i) => (
+                          <span key={i} className="tech-badge">{t}</span>
+                        ))}
+                      </div>
 
-          {/* Project Card 3 */}
-          <div className="col">
-            <div className="card h-100 shadow-sm">
-              <img src="exploreIndianIsland.png" className="card-img-top" alt="Project 3" />
-              <div className="card-body">
-                <h5 className="card-title">Explore Indian Island</h5>
-                <p className="card-text">
-                  <li>
-                    This project will help people to plan their trip to beautiful Indian Islands.
-                  </li>
-                  <li>
-                    In this project, we have used HTML, CSS, and JavaScript for the front end and currently we are working on SQL for the backend of this project
-                  </li>
-                </p>
-              </div>
-              <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
-                <a
-                  href="https://github.com/rudreshtiwari10/exploreindianislands.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark btn-sm"
-                >
-                  GitHub
-                </a>
-                {/* <a
-                  href="https://yourliveproject3.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary btn-sm"
-                >
-                  Visit Website
-                </a> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                      {/* Buttons */}
+                      <div className="project-links">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
+                          <FaGithub /> GitHub
+                        </a>
+                        {project.live && (
+                          <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-live">
+                            <FaExternalLinkAlt /> Live Demo
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </Tilt>
+              </motion.div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </section>
   );
 };
