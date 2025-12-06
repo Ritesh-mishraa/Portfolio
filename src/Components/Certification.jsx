@@ -8,18 +8,18 @@ export default function Certifications() {
 
   const certifications = [
     {
-      title: "Database Management Systems",
-      issuer: "NPTEL (IIT Kharagpur)",
-      description: "Completed an 8-week advanced curriculum on Relational Database Design. Mastered SQL optimization, Schema Normalization (1NF to BCNF), and Transaction Management (ACID properties).",
-      link: "https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs18/Course/NPTEL25CS18S64830015301351433.pdf",
-      icon: <FaUniversity /> 
-    },
-    {
       title: "Programming In Java",
       issuer: "NPTEL (IIT Kharagpur)",
       description: "A rigorous 12-week course covering Core Java fundamentals, Object-Oriented Programming (OOP), Multithreading, Exception Handling, and GUI development using Swing.",
-      link: "https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs57/Course/NPTEL25CS57S115060015204431578.pdf",
+      link: "https://drive.google.com/file/d/1DJ-C7kx2xwGubVktJlMp33eQypiz1aTS/view?usp=drivesdk",
       icon: <FaUniversity />
+    },
+    {
+      title: "Database Management Systems",
+      issuer: "NPTEL (IIT Kharagpur)",
+      description: "Completed an 8-week advanced curriculum on Relational Database Design. Mastered SQL optimization, Schema Normalization (1NF to BCNF), and Transaction Management (ACID properties).",
+      link: "https://drive.google.com/file/d/1-lTF5NSJkN_68d1760vl6KvYcnZ6jHuD/view?usp=drivesdk",
+      icon: <FaUniversity /> 
     },
     {
       title: "Full-Stack Web Development",

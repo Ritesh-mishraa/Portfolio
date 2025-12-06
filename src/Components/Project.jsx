@@ -31,6 +31,14 @@ const Projects = () => {
       img: "exploreIndianIsland.png",
       github: "https://github.com/rudreshtiwari10/exploreindianislands.git",
       live: null 
+    },
+    {
+      title: "GupShupAI",
+      description: "GupShupAI An intelligent real-time chat application built on the MERN stack. Features instant messaging, secure authentication, and integrated AI capabilities to enhance user interaction. Designed with a focus on low latency and a modern, responsive UI.",
+      tech: ["MongoDB", "Express", "React", "Node.js", "CSS3", "JavaScript"],
+      img: "GupShupAI.png",
+      github: "https://github.com/Ritesh-mishraa/GupShupAI",
+      live: null
     }
   ];
 
