@@ -16,11 +16,22 @@ const ParticlesBackground = () => {
   if (!init) return null;
 
   return (
+    <div
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background: "linear-gradient(180deg, #000814 0%, #001d3d 50%, #000000 100%)",
+      zIndex: -1,
+    }}
+  >
     <Particles
       id="tsparticles"
       options={{
         background: {
-          color: { value: "#0f172a" }, 
+          color: { value: "transparent" }, 
         },
         fpsLimit: 120,
         particles: {
@@ -45,14 +56,11 @@ const ParticlesBackground = () => {
         },
       }}
       style={{
-        position: "fixed", 
-        top: 0,
-        left: 0,
         width: "100%",
         height: "100%",
-        zIndex: -1, 
       }}
     />
+    </div>
   );
 };
 

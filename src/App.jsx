@@ -8,6 +8,7 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import ParticlesBackground from './Components/ParticlesBackground';
 import Home from './Components/Home';
+import WhatsAppBtn from "./Components/WhatsAppBtn";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Projects id="projects" />
       <Certifications />
       <Contact id="contact"/>
+      <WhatsAppBtn />
     </>
   )
 }
