@@ -6,8 +6,16 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import './Projects.css';
 
 const Projects = () => {
-  
+
   const projects = [
+    {
+      title: "AI Mock Interview Platform",
+      description: "Spearheaded the frontend development and UI design for an AI-driven interview preparation platform at CountryEdu Pvt Ltd. Collaborated within a team to build a responsive, user-centric interface that ensures seamless interaction with backend AI services.",
+      tech: ["Next.js", "Toastify", "Zod", "Tailwind CSS", "UI/UX Design", "Team Collaboration"],
+      img: "aimock.png",
+      github: "https://github.com/AniketKaushik19/Ai-mock-Frontend",
+      live: "https://ai-mock-frontend.vercel.app/"
+    },
     {
       title: "WanderLust",
       description: "A comprehensive full-stack marketplace for property rentals. Built using the MVC architecture with Node.js and Express. Features include secure user authentication (Passport.js), RESTful API integration for map services, and a robust review system using MongoDB.",
@@ -30,7 +38,7 @@ const Projects = () => {
       tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
       img: "exploreIndianIsland.png",
       github: "https://github.com/rudreshtiwari10/exploreindianislands.git",
-      live: null 
+      live: "https://exploreindianislands.vercel.app/"
     },
     {
       title: "GupShupAI",
@@ -65,7 +73,7 @@ const Projects = () => {
               >
                 <Tilt glareEnable={true} glareMaxOpacity={0.2} scale={1.02} transitionSpeed={2500}>
                   <div className="project-card">
-                    
+
                     <div className="card-img-wrapper">
                       <img src={project.img} alt={project.title} className="project-img" />
                       <div className="img-overlay"></div>
@@ -74,13 +82,13 @@ const Projects = () => {
                     <div className="card-content">
                       <h5 className="project-title">{project.title}</h5>
                       <p className="project-desc">{project.description}</p>
- 
+
                       <div className="tech-tags">
                         {project.tech.map((t, i) => (
                           <span key={i} className="tech-badge">{t}</span>
                         ))}
                       </div>
-                      
+
                       <div className="project-links">
                         <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn-github">
                           <FaGithub /> GitHub

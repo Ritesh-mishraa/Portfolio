@@ -62,7 +62,7 @@ const Home = () => {
 
           <div className="cta-buttons">
             <a href='Riteshresume.pdf'
-            download="Ritesh_Mishra_Resume.pdf"
+            download="Ritesh-Mishra-Resume.pdf"
             className='btn-primary'>
                 Download Resume
             </a>
