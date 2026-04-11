@@ -9,6 +9,14 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "CommitStream",
+      description: "An advanced collaborative platform integrating Kanban boards with GitHub. Features include real-time team collaboration, intelligent merge conflict prediction, and seamless GitHub authentication flows.",
+      tech: ["React", "Node.js", "Tailwind CSS", "GitHub API"],
+      img: "commitStream.png",
+      github: "https://github.com/Ritesh-mishraa/CommitStream",
+      live: "https://commitstream.onrender.com/"
+    },
+    {
       title: "AI Mock Interview Platform",
       description: "Spearheaded the frontend development and UI design for an AI-driven interview preparation platform at CountryEdu Pvt Ltd. Collaborated within a team to build a responsive, user-centric interface that ensures seamless interaction with backend AI services.",
       tech: ["Next.js", "Toastify", "Zod", "Tailwind CSS", "UI/UX Design", "Team Collaboration"],
