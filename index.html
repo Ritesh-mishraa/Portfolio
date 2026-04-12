@@ -61,7 +61,38 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Structured Data (JSON-LD) for better Google parsing -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Ritesh Mishra",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://ritesh-mishraa.github.io/Portfolio/",
+        "sameAs": [
+          "https://github.com/Ritesh-mishraa",
+          "https://linkedin.com/in/ritesh-mishraa"
+        ],
+        "knowsAbout": ["React", "Node.js", "MongoDB", "JavaScript", "Full Stack Development"]
+      }
+    </script>
+    <div id="root">
+      <!-- Fallback content for Search Engine Crawlers before React loads -->
+      <div style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;">
+        <h1>Ritesh Mishra - Full Stack Developer</h1>
+        <p>Welcome to the portfolio of Ritesh Mishra. I am a passionate Full Stack Developer specializing in React, Node.js, Express, and MongoDB.</p>
+        <h2>My Projects</h2>
+        <ul>
+          <li>CommitStream - Advanced Git flow and merge conflict predictor</li>
+          <li>Amazon India Clone - Frontend replica</li>
+          <li>Finance Dashboard - Real-time data visualization UI</li>
+        </ul>
+        <h2>My Skills</h2>
+        <p>JavaScript, React, Node.js, MongoDB, Git, HTML, CSS, Tailwind CSS.</p>
+        <h2>Contact Me</h2>
+        <p>Explore my projects, skills, and contact information. Get in touch to collaborate on exciting web applications.</p>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
